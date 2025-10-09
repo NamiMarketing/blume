@@ -1,0 +1,93 @@
+@use 'index' as *;
+
+.contato{
+    padding: 24rem 0 0;
+    .wrap-contato{
+        display: flex;
+        gap: 23rem;
+        width: 85%;
+        margin: auto;
+        .left-contato{
+            display: flex;
+            flex-direction: column;
+            gap: 7rem;
+            width: 61rem;
+            h2{
+                font-size: 2.6rem;
+                line-height: 4rem;
+                letter-spacing: 2%;
+                text-transform: uppercase; 
+                color: $azul-900;
+                font-family: $source;
+                font-weight: 500;
+            }
+            .info-contato{
+                display: flex;
+                flex-direction: column;
+                gap: 2.3rem;
+                .item-contato{
+                    display: flex;
+                    gap: 2.6rem;
+                    align-items: center;
+                    p{
+                        font-size: 2rem;
+                        line-height: 2rem;
+                        letter-spacing: 2%;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 700px){
+        padding: 16rem 0 0;
+        .wrap-contato{
+            display: flex;
+            flex-direction: column;
+            gap: 2.3rem;
+            width: 85%;
+            margin: auto;
+            align-items: flex-start;
+            .left-contato{
+                display: flex;
+                flex-direction: column;
+                gap: 4.4rem;
+                width: 100%;
+                h2{
+                    font-size: 2rem;
+                    line-height: 3rem;
+                }
+                .info-contato{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    .item-contato{
+                        display: flex;
+                        gap: 1.2rem;
+                        align-items: center;
+                        p{
+                            font-size: 1.6rem;
+                            line-height: 1.6rem;
+                        }
+                        >img{
+                            height: 1.4rem;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+            img{
+                width: 18.5rem;
+                height: auto;
+                align-self: flex-end;
+            }
+        }
+    }
+}
+
+footer{
+    margin-top: -5rem;
+    @media screen  and (max-width: 700px){
+        margin-top: -4rem;
+    }
+}
