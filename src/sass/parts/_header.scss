@@ -38,17 +38,37 @@
             font-family: $source;
             margin-bottom: 1rem;
         }
+        .text{
+            display: flex;
+            align-items: center;
+            width: 35rem;
+            gap: 2rem;
+            h1{
+                font-size: 4.6rem;
+                letter-spacing: 6%;
+                color: $background;
+                font-weight: 700;
+                line-height: 4.6rem;
+            }
+            img{
+                width: 15.8rem;
+                height: 4.4rem;
+            }
+        }
     }
-    .down-arrow{
+    .top-flower{
         position: absolute;
-        bottom: 4rem;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 0;
+        left: 0;
         z-index: 10;
-        width: 8rem;
-        height: 8rem;
-        animation: arrow 1.5s infinite alternate linear;
     }
+    .right-flower{
+        position: absolute;
+        right: 0;
+        bottom: 12%;
+        z-index: 10;
+    }
+  
     @media screen and (max-width:700px) {
         aspect-ratio: 36/40;
         height: auto;
@@ -73,10 +93,9 @@
 
 .header2{
     position: relative;
-    aspect-ratio: 144/60;
     width: 100%;
-    height: auto;
-    img{
+    height: 100vh;
+    .header-back{
         position: absolute;
         top: 0;
         left: 0;
@@ -87,50 +106,54 @@
     }
     .header-text{
         position: absolute;
-        left: 10rem;
-        top: 50%;
-        z-index: 3;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        width: 40rem;
+        left: 50%;
+        top: 45%;
+        z-index: 10;
+        transform: translate(-50%, -50%);
         h2{
             font-size: 4rem;
-            color: $azul-300;
-            font-weight: 500;
-            line-height: 4.6rem;
-            letter-spacing: 5%;
+            color: $marrom;
+            font-weight: 600;
+            line-height: 2.8rem;
+            letter-spacing: 8%;
             font-family: $source;
-            text-transform: uppercase;
-        }
-        p{
-            font-size: 1.9rem;
-            line-height: 2.9rem;
-            letter-spacing: 2%;
-            text-transform: uppercase;
-            font-weight: 300;
-            color: $azul-300;
         }
     }
+    .top-flower{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .right-flower{
+        position: absolute;
+        right: 0;
+        bottom: 12%;
+        z-index: 10;
+    }
+  
     @media screen and (max-width:700px) {
         aspect-ratio: 36/40;
         height: auto;
         .header-text{
             left: 2.4rem;
-            gap: 1.2rem;
-            width: 27rem;
-            h2{
-                font-size: 2.6rem;
-                line-height: 2.2rem;
-                width: 20rem;
+            gap: 1rem;
+            width: 17rem;
+            top: 55%;
+            img{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
             }
-            p{
-                font-size: 1.2rem;
-                line-height: 1.6rem;
+            h2{
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                width: 25rem;
             }
         }
     }
 }
+
 
 @keyframes arrow{
     from {

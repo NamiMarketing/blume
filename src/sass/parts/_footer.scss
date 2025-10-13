@@ -3,110 +3,76 @@
 
 
 footer{
-    background-color: $azul-500;
-    padding: 8rem 0 1rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    width: 100%;
+    height: 760px;
+    background-image: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 5;
     .info-footer{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        gap: 2rem;
-        padding-bottom: 3rem;
         width: 85%;
-        margin: 0 auto;
-        img{
-            margin-bottom: 2rem;
-        }
-        p{
-            font-size: 1.8rem;
-            font-weight: 200;
-            text-transform: uppercase;
-            line-height: 1.8rem;
-            letter-spacing: 2%;
-        }
-        strong{
-            font-weight: 400;
-        }
-        p:last-of-type{
-            font-weight: 400;   
-            font-size: 2rem;
-            line-height: 3.2rem;
-            text-transform: none;
-            margin-bottom: 0.5rem;
-        }
-        .icons-footer{
+        margin: auto;
+        padding: 18rem 0 2rem;
+        height: 100%;
+        color: $background;
+        .top-footer{
             display: flex;
-            gap: 2.5rem;
-            a{
-                width: 2.5rem;
+            align-items: flex-start;
+            justify-content: space-between;
+            .left-footer{
+                display: flex;
+                flex-direction: column;
+                gap: 2.6rem;
+                a{
+                    font-size: 2.2rem;
+                    line-height: 3rem;
+                    letter-spacing: 5%;
+                    width: 42rem;
+                    color: $background;
+                    font-weight: 400;
+                }
             }
-        }
-    }
-    .nami{
-        text-align: center;
-        font-size: 1.6rem;
-        color: $azul-900;
-    }
-    >img{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .left-circle{
-        left: 0;
-    }
-    .right-circle{
-        right: 0;
-    }
-
-    @media screen and (max-width: 700px){
-        padding: 5rem 0 1rem;
-        .info-footer{
-            gap: 1.5rem;
-            padding-bottom: 2rem;
-            >img{
-                margin-bottom: 1.5rem;
-                width: 17rem;
-            }
-            p{
-                font-size: 1.5rem;
-                line-height: 1.5rem;
-                letter-spacing: 0%;
-            }
-            p:last-of-type{
-                font-weight: 400;   
-                font-size: 1.5rem;
-                line-height: 2rem;
-                text-transform: none;
-                margin-bottom: 0.5rem;
-            }
-            .icons-footer{
+            .right-footer{
                 display: flex;
                 gap: 1.5rem;
                 a{
-                    width: 2rem;
+                    width: 4rem;
+                    height: 4rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
             }
         }
+        .mid-footer{
+            display: flex;
+            flex-direction: column;
+            gap: 2.6rem;
+            align-items: center;
+            img{
+                width: 61rem;
+            }
+            p{
+                font-size: 2.4rem;
+                line-height: 3rem;
+                letter-spacing: 5%;
+                font-weight: 100;
+                color: $background;
+            }
+        }
         .nami{
-            text-align: center;
-            font-size: 1.4rem;
-        }
-        >img{
-            position: absolute;
-            top: 6rem;
-            transform: translateY(0%);
-            height: 7.6rem;
-        }
-        .left-circle{
-            left: 0;
-        }
-        .right-circle{
-            right: 0;
+            margin-top: 6rem;
+            p{
+                font-size: 1.8rem;
+                line-height: 3rem;
+                font-weight: 100;
+                letter-spacing: 5%;
+                color: $background;
+            }
         }
     }
 }

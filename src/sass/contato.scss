@@ -1,43 +1,49 @@
 @use 'index' as *;
 
 .contato{
-    padding: 24rem 0 0;
+    padding: 24rem 0 25rem;
+    position: relative;
     .wrap-contato{
         display: flex;
-        gap: 23rem;
+        gap: 15rem;
         width: 85%;
         margin: auto;
         .left-contato{
-            display: flex;
-            flex-direction: column;
-            gap: 7rem;
-            width: 61rem;
+            width: 46rem;
             h2{
-                font-size: 2.6rem;
-                line-height: 4rem;
-                letter-spacing: 2%;
-                text-transform: uppercase; 
-                color: $azul-900;
-                font-family: $source;
-                font-weight: 500;
-            }
-            .info-contato{
-                display: flex;
-                flex-direction: column;
-                gap: 2.3rem;
-                .item-contato{
-                    display: flex;
-                    gap: 2.6rem;
-                    align-items: center;
-                    p{
-                        font-size: 2rem;
-                        line-height: 2rem;
-                        letter-spacing: 2%;
-                        font-weight: 300;
-                    }
-                }
+                font-size: 2.8rem;
+                line-height: 3.8rem;
+                color: $verde-500;
             }
         }
+        .right-contato{
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+            a, div{
+                display: flex;
+                gap: 3rem;
+            }
+            img{
+                width: 3.6rem;
+                height: 3.6rem;
+            }
+            p{
+                font-size: 2.2rem;
+                line-height: 3rem;
+                color: $marrom;
+                letter-spacing: 5%;
+                font-weight: 400;
+                font-family: $geologica;
+                width: 50rem;
+            }
+        }
+    }
+    >img{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 10;
     }
     @media screen and (max-width: 700px){
         padding: 16rem 0 0;

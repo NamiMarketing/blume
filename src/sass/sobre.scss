@@ -1,0 +1,106 @@
+@use 'index' as *;
+
+.natureza{
+    position: relative;
+    .wrap-natureza{
+        display: flex;
+        gap: 12.5rem;
+        width: 85%;
+        margin: auto;
+        margin-bottom: 7rem;
+        align-items: center;
+        justify-content: center;
+    }
+    p{
+        width: 63rem;
+        font-size: 2.3rem;
+        line-height: 3.3rem;
+        letter-spacing: 2%;
+        color: $marrom;
+    }
+    .left-flower{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    h2{
+        font-size: 2.8rem;
+        line-height: 3.8rem;
+        letter-spacing: 8%;
+        font-weight: 600;
+        color: $marrom;
+        text-align: center;
+        width: 103rem;
+        margin: auto;
+        font-family: $geologica;
+        span{
+            font-family: $source;
+        }
+    }
+}
+
+.responsabilidade{
+    background-image: url(../img/sobre/background.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 26rem 0 15rem;
+    .wrap-responsabilidade{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 6rem;
+        row-gap: 3.2rem;
+        width: 85%;
+        margin: auto;
+        place-items: center;
+        p{
+            font-size: 2.6rem;
+            line-height: 3.2rem;
+            letter-spacing: 4%;
+            font-weight: 700;
+            color: $verde-300;
+            text-align: center;
+            width: 31.5rem;
+            font-family: $source;
+            align-self: flex-start;
+        }
+    }
+}
+
+.prefooter{
+    background-image: url(../img/sobre/prefooter.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 144/62;
+    height: auto;
+    position: relative;
+    .text-prefooter{
+        position: absolute;
+        left: 10rem;
+        top: 13rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        p{
+            font-size: 2.4rem;
+            line-height: 3.4rem;
+            letter-spacing: 5%;
+            font-weight: 300;
+            color: $background;
+            font-family: $geologica;
+            width: 61rem;
+            span{
+                font-family: $source;
+            }
+        }
+    }
+}
+
+footer{
+    margin-top: -10rem;
+    @media screen  and (max-width: 700px){
+        margin-top: -4rem;
+    }
+}

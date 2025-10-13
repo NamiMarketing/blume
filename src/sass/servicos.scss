@@ -1,0 +1,42 @@
+@use 'index' as *;
+
+.wrap-servicos{
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem;
+    padding-bottom: 12rem;
+    .item-servicos{
+        display: flex;
+        gap: 8.5rem;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 295px;
+            height: 36.9rem;
+        }
+        .puericultura{
+            width: 311px;
+            margin-left: -16px;
+        }
+        .right-servicos{
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            width: 54rem;
+            h2{
+                font-size: 3rem;
+                line-height: 3.4rem;
+                color: $marrom;
+                font-weight: 700;
+            }
+            p{
+                font-size: 2.2rem;
+                line-height: 3.2rem;
+                color: $roxo;
+                letter-spacing: 2%;
+                font-weight: 500
+            }
+        }
+    }
+}

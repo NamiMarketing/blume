@@ -2,13 +2,11 @@
 @use "./global" as *;
 
 .nav {
-  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding: 2.5rem 10rem;
-  background-color: transparent;
+  padding: 4.4rem 10rem;
   position: absolute;
+  right: 0;
   z-index: 5;
   input {
     display: none;
@@ -27,7 +25,6 @@
       display: flex;
       gap: 5rem;
       align-items: center;
-      transform: translateX(25%);
       background-color: #9eabc28c;
       padding: 1.6rem 5rem;
       border-radius: 25px;
@@ -37,8 +34,9 @@
       a {
         font-style: normal;
         font-weight: 500;
-        font-size: 1.8rem;
+        font-size: 1.9rem;
         line-height: 100%;
+        letter-spacing: 5%;
         color: $branco;
         font-family: $geologica;
       }
