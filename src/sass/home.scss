@@ -5,6 +5,7 @@
     width: 85%;
     margin: auto;
     gap: 8.6rem;
+    justify-content: center;
     .left-leveza{
         display: flex;
         flex-direction: column;
@@ -119,7 +120,7 @@
     width: 100vw;
     aspect-ratio: 144/132;
     height: auto;
-    padding: 17vw 0 21vw;
+    padding: 20vw 0 20vw;
     h1{
         font-size: 5rem;
         line-height: 5rem;
@@ -132,6 +133,7 @@
         gap: 2.8rem;
         width: 85%;
         margin: 6.5rem auto 7.9rem;
+        justify-content: center;
         .item-fazemos{
             width: 29.5rem;
             display: flex;
@@ -314,5 +316,5 @@
     }
 }
 footer{
-    margin-top: -9rem;
+    margin-top: -12rem;
 }
