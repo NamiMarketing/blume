@@ -149,6 +149,22 @@ footer{
                 }
             }
         }
+        >.nami{
+            margin-top: 0;
+            background-color: #9ca8bf;
+            width: 100%;
+            display: inline-block !important;
+            padding-bottom: 1rem;
+            margin-top: -2rem;
+            p{
+                font-size: 1.3rem;
+                line-height: 1.4rem;
+                font-weight: 100;
+                letter-spacing: 5%;
+                color: $background;
+                text-align: center;
+            }
+        }
     }
 }
   
