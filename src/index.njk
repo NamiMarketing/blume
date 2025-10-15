@@ -7,19 +7,19 @@ cssPath: "/css/home.css"
 {% include 'nav.njk' %}
 
 <header class="header">
-    <img class="tablet-desktop header-back" src="../img/home/header.png" alt="Foto com a equipe da Clinotam olhando uma radiografia panorâmica">
-    <img class="only-mobile header-back" src="../img/home/header-mob.png" alt="Foto com a equipe da Clinotam olhando uma radiografia panorâmica">
+    <img class="tablet-desktop header-back" src="../img/home/header.png" alt="">
+    <img class="only-mobile header-back" src="../img/home/header-mob.png" alt="">
     <div class="header-text">
        <img 
             src="../img/home/header-logo.png"
             srcset="../img/home/header-logo@2x.png 2x"
-            alt="logo Clinotam Odontologia"
+            alt="logo Blume"
         >
         <h2>Pediatria e neonatologia para as primeiras fases da vida.</h2>
         <a href="https://api.whatsapp.com/send?phone=5541998560847&text=Estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." class="greenButton">Vamos conversar?</a>
     </div>
     <img src="../img/home/top-flower.png" class="top-flower" alt="">
-    <img src="../img/home/right-flower.png" class="right-flower" alt="">
+    <img src="../img/home/right-flower.png" class="right-flower tablet-desktop" alt="">
 </header>
 
 <section class="leveza">
@@ -27,7 +27,7 @@ cssPath: "/css/home.css"
         <h2>
             Leveza para acolher, maturidade para cuidar e um olhar único para cada família. Assim nasceu a Blumê Pediatria, um espaço para acompanhar cada etapa da vida da sua criança com atenção, carinho e segurança.
         </h2>
-        <a href="https://api.whatsapp.com/send?phone=5541998560847&text=Estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." class="greenButton">Vamos conversar?</a>
+        <a href="https://api.whatsapp.com/send?phone=5541998560847&text=Estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." class="greenButton tablet-desktop">Vamos conversar?</a>
     </div>
     <img src="../img/logo@3x.png"
     alt="">
@@ -36,6 +36,7 @@ cssPath: "/css/home.css"
             <br/><br/>
             Queremos que cada consulta seja leve e, por isso, nos unimos para construir um espaço onde famílias sejam ouvidas e acolhidas, confiando que seus pequenos estão em boas mãos.
         </p>
+        <a href="https://api.whatsapp.com/send?phone=5541998560847&text=Estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." class="greenButton only-mobile">Vamos conversar?</a>
     </div>
 </section>
 
@@ -92,7 +93,7 @@ cssPath: "/css/home.css"
 
 <section class="detalhes">
     <h1>Detalhes que fazem toda a diferença</h1>
-    <div class="wrap-detalhes">
+    <div class="wrap-detalhes tablet-desktop">
         <img 
         src="../img/home/evidencias.png"
         srcset="../img/home/evidencias@2x.png 2x"
@@ -125,6 +126,52 @@ cssPath: "/css/home.css"
 
         <p>Consultas presenciais e telemedicina</p>
     </div>
+    <div class="wrap-mobile only-mobile">
+        <div class="item-detalhes">
+            <div class="box-image">
+                <img 
+                src="../img/home/evidencias.png"
+                srcset="../img/home/evidencias@2x.png 2x"
+                class="evidencias"
+                alt="">
+            </div>
+            <p>Pediatria baseada em evidências</p>
+        </div>
+        
+        <div class="item-detalhes">
+            <div class="box-image">
+                <img 
+                src="../img/home/ludico.png"
+                srcset="../img/home/ludico@2x.png 2x"
+                class="ludico"
+                alt="">
+            </div>
+            <p>Espaço lúdico e acolhedor</p>
+        </div>
+
+        <div class="item-detalhes">
+            <div class="box-image">
+                <img 
+                src="../img/home/clinica.png"
+                srcset="../img/home/clinica@2x.png 2x"
+                class="clinica"
+                alt="">
+            </div>
+            <p>Clínica amiga da amamentação</p>
+        </div>
+
+        <div class="item-detalhes">
+            <div class="box-image">
+                <img 
+                src="../img/home/telemedicina.png"
+                srcset="../img/home/telemedicina@2x.png 2x"
+                class="telemedicina"
+                alt="">
+            </div>
+            <p>Consultas presenciais e telemedicina</p>
+        </div>
+
+    </div>
     <a href="https://api.whatsapp.com/send?phone=5541998560847&text=Estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." class="purpleButton">Vamos conversar?</a>
 </section>
 
@@ -152,11 +199,14 @@ cssPath: "/css/home.css"
 
 <section class="espaco">
     <div class="wrap-espaco">
+        <h2 class="only-mobile">
+            Um espaço pensado para acolher cada detalhe da sua história.
+        </h2>
         <div class="left-espaco">
             <img src="../img/home/espaco.png" alt="">
         </div>
         <div class="right-espaco">
-            <h2>
+            <h2 class="tablet-desktop">
                 Um espaço pensado para acolher cada detalhe da sua história.
             </h2>
             <p>
@@ -165,7 +215,7 @@ cssPath: "/css/home.css"
             <a href="https://api.whatsapp.com/send?phone=5541998560847&text=Estava%20no%20site%20e%20gostaria%20de%20agendar%20uma%20consulta." class="purpleButton">Venha nos visitar</a>
         </div>
     </div>
-    <img src="../img/home/right-flower.png" alt="">
+    <img src="../img/home/right-flower.png" class="tablet-desktop" alt="">
 </section>
 
 

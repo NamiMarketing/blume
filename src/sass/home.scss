@@ -6,6 +6,7 @@
     margin: auto;
     gap: 8.6rem;
     justify-content: center;
+    margin-top: 3.5rem;
     .left-leveza{
         display: flex;
         flex-direction: column;
@@ -31,6 +32,41 @@
             color: $roxo;
             font-weight: 400;
             width: 41.8rem;
+        }
+    }
+    @media screen and (max-width: 700px){
+        flex-direction: column;
+        gap: 3.2rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        .left-leveza{
+            h2{
+                width: 100%;
+                font-size: 1.6rem;
+                line-height: 2rem;
+                text-align: center;
+            }
+        }
+        >img{
+            width: 10rem;
+            height: 13.5rem;
+        }
+        .right-leveza{
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            align-items: center;
+            p{
+                font-size: 1.6rem;
+                line-height: 2rem;
+                letter-spacing: 0%;
+                width: 100%;
+                text-align: center;
+            }
+            a{
+                display: flex !important;
+            }
         }
     }
 }
@@ -111,6 +147,69 @@
         left: 0;
         bottom: 0;
     }
+    @media screen and (max-width:700px) {
+        padding-bottom: 9.5rem;
+        width: 100%;
+        margin: auto;
+        h1{
+            font-size: 2.2rem;
+            line-height: 2.8rem;
+            width: 27rem;
+            margin: 9rem auto 14rem;
+            text-align: center;
+        }
+        .wrap-conheca{
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            margin: auto;
+            gap: 15rem;
+            justify-content: center;
+            .box-conheca{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 2rem 2rem 6rem;
+                img{
+                    aspect-ratio: 188/224;
+                    width: 50%;
+                    height: auto;
+                }
+                >div{
+                    margin: 0;
+                    padding: 11.6rem 1.6rem 4rem;
+                    gap: 1rem;
+                    width: 100%;
+                    height: 100%;
+                    h2{
+                        font-size: 2.2rem;
+                        line-height: 2.2rem;
+                    }
+                    h3{
+                        font-size: 1.4rem;
+                        line-height: 2rem;
+                    }
+                    p{
+                        font-size: 1.6rem;
+                        line-height: 2.2rem;
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+        }
+        .right-conheca{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 10rem;
+        }
+        .left-conheca{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 9rem;
+        } 
+    }
 }
 
 .fazemos{
@@ -169,6 +268,55 @@
     a{
         margin: auto;
     }
+    @media screen and (max-width:700px) {
+        background-image: url(../img/back-fazemos-mob.png);
+        aspect-ratio: 36/113;
+        height: auto;
+        padding: 45vw 0 10vw;
+        margin-top: -4rem;
+        h1{
+            font-size: 2.4rem;
+            line-height: 2.4rem;
+        }
+        .wrap-fazemos{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.6rem;
+            row-gap: 8vw;
+            width: 90%;
+            margin: 12vw auto;
+            justify-content: center;
+            .item-fazemos{
+                width: 41vw;
+                display: flex;
+                flex-direction: column;
+                gap: 5vw;
+                img{
+                    aspect-ratio: 150/185;
+                    width: 100%;
+                    box-shadow: 4px 4px 5px #0000001a;
+                    border-radius: 250px;
+                    height: auto;
+                }
+                p{
+                    font-size: 1.6rem;
+                    line-height: 2rem;
+                    letter-spacing: 1%;
+                }
+            }
+        }
+        >p{
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            letter-spacing: 0%;
+            font-weight: 400;
+            width: 90%;
+            margin: 0 auto 7vw;
+        }
+        a{
+            margin: auto;
+        }
+    }
 }
 
 .detalhes{
@@ -210,6 +358,57 @@
     }
     a{
         margin: 7.6rem auto 8.8rem;
+    }
+    @media screen and (max-width:700px) {
+        h1{
+            font-size: 2.4rem;
+            line-height: 3rem;
+            width: 26rem;
+            margin: 0rem auto 4rem;
+        }
+        .wrap-mobile{
+            display: flex !important;
+            flex-wrap: wrap;
+            width: 90%;
+            margin: auto;
+            gap: 1.6rem;
+            row-gap: 4rem;
+            justify-content: center;
+            .item-detalhes{
+                width: 15rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.6rem;
+                .box-image{
+                    height: 5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .evidencias, .ludico{
+                width: 6rem;
+            }
+            .clinica{
+                width: 5.3rem;
+            }
+            .telemedicina{
+                width: 5.6rem;
+            }
+            p{
+                font-size: 1.6rem;
+                line-height: 2rem;
+                letter-spacing: 2%;
+                color: $verde-500;
+                font-weight: 700;
+                text-align: center;
+                font-family: $source;
+            }
+        }
+        a{
+            margin: 4rem auto 6rem;
+        }
     }
 }
 
@@ -314,7 +513,56 @@
         top: 0;
         z-index: 10;
     }
+    @media screen and (max-width:700px){
+        width: 100vw;
+        padding: 20rem 0 16rem;
+        position: relative;
+        z-index: 1;
+        .wrap-espaco{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: auto;
+            gap: 4rem;
+            align-items: flex-start;
+            justify-content: center;
+            h2{
+                font-size: 2.2rem;
+                line-height: 2.8rem;
+                color: $marrom;
+                font-weight: 700;
+                width: 25rem;
+            }
+            .left-espaco{
+                background-color: $branco;
+                padding: 1.9rem 1.9rem 7.6rem;
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            .right-espaco{
+                display: flex;
+                flex-direction: column;
+                gap: 2.6rem;
+                width: 100%;
+                p{
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    letter-spacing: 2%;
+                    margin-bottom: 0rem;
+                }
+            }
+        }
+        >img{
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 10;
+        }
+    }
 }
+
 footer{
     margin-top: -12rem;
 }
