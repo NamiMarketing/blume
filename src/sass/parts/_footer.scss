@@ -79,13 +79,14 @@ footer{
         width: 100%;
         height: auto;
         aspect-ratio: 36/48;
+        position: relative;
         .info-footer{
             display: flex;
             flex-direction: column;
             width: 85%;
             margin: auto;
             padding: 23vw 0 1rem;
-            height: 100%;
+            height: auto;
             color: $background;
             .top-footer{
                 display: flex;
@@ -150,12 +151,12 @@ footer{
             }
         }
         >.nami{
-            margin-top: 0;
-            background-color: #9ca8bf;
+            background-color: transparent;
             width: 100%;
             display: inline-block !important;
             padding-bottom: 1rem;
-            margin-top: -2rem;
+            position: absolute;
+            bottom: 0;
             p{
                 font-size: 1.3rem;
                 line-height: 1.4rem;
