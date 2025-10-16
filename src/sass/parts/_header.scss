@@ -94,18 +94,16 @@
             .text{
                 display: flex;
                 align-items: center;
-                width: 35rem;
-                gap: 2rem;
+                width: 100% ;
+                gap: 1rem;
                 h1{
-                    font-size: 4.6rem;
-                    letter-spacing: 6%;
-                    color: $background;
-                    font-weight: 700;
-                    line-height: 4.6rem;
+                    font-size: 2.4rem;
+                    letter-spacing: 4%;
+                    line-height: 2.4rem;
                 }
                 img{
-                    width: 15.8rem;
-                    height: 4.4rem;
+                    width: 7.8rem;
+                    height: 2.2rem;
                 }
             }
         }
@@ -161,23 +159,30 @@
     }
   
     @media screen and (max-width:700px) {
-        aspect-ratio: 36/40;
+        aspect-ratio: 36/50;
         height: auto;
         .header-text{
-            left: 2.4rem;
-            gap: 1rem;
-            width: 17rem;
-            top: 55%;
-            img{
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-            }
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
             h2{
-                font-size: 1.6rem;
-                line-height: 2.2rem;
-                width: 25rem;
+                font-size: 2.7rem;
+                line-height: 2.7rem;
+                letter-spacing: 4%;
+                color: $background;
+                text-align: center;
             }
+        }
+        .top-flower{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            width: 9rem;
         }
     }
 }

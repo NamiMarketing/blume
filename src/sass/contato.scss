@@ -46,47 +46,45 @@
         z-index: 10;
     }
     @media screen and (max-width: 700px){
-        padding: 16rem 0 0;
+        padding: 10rem 0 4.5rem;
         .wrap-contato{
             display: flex;
             flex-direction: column;
-            gap: 2.3rem;
+            gap: 4.5rem;
             width: 85%;
             margin: auto;
             align-items: flex-start;
             .left-contato{
-                display: flex;
-                flex-direction: column;
-                gap: 4.4rem;
                 width: 100%;
                 h2{
                     font-size: 2rem;
-                    line-height: 3rem;
-                }
-                .info-contato{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 2rem;
-                    .item-contato{
-                        display: flex;
-                        gap: 1.2rem;
-                        align-items: center;
-                        p{
-                            font-size: 1.6rem;
-                            line-height: 1.6rem;
-                        }
-                        >img{
-                            height: 1.4rem;
-                            width: auto;
-                        }
-                    }
+                    line-height: 2.4rem;
+                    width: 23rem;
+                    margin-left: 7rem;
                 }
             }
-            img{
-                width: 18.5rem;
-                height: auto;
-                align-self: flex-end;
+            .right-contato{
+                gap: 2rem;
+                 a, div{
+                    gap: 1.5rem;
+                }
+                img{
+                    width: 2.2rem;
+                    height: 2.2rem;
+                }
+                p{
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    letter-spacing: 0%;
+                    width: 100%;
+                }
             }
+        }
+        >img{
+            width: auto;
+            height: 18.4rem;
+            left: unset;
+            top: 7rem;
         }
     }
 }
@@ -94,6 +92,6 @@
 footer{
     margin-top: -5rem;
     @media screen  and (max-width: 700px){
-        margin-top: -4rem;
+        margin-top: 0;
     }
 }
