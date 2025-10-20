@@ -95,12 +95,13 @@
             position: relative;
             width: 50rem;
             img{
-                width: 25rem;
+                width: auto;
                 height: 31.2rem;
                 position: absolute;
                 left: 50%;
                 top: 0;
                 transform: translate(-50%, -50%);
+                object-fit: contain;
             }
             >div{
                 background-color: $verde-100;
@@ -350,7 +351,7 @@
             font-size: 2.6rem;
             line-height: 3.2rem;
             letter-spacing: 4%;
-            color: $verde-500;
+            color: #a1c3ad;
             font-weight: 700;
             text-align: center;
             font-family: $source;
