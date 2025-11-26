@@ -176,22 +176,50 @@ cssPath: "/css/home.css"
 </section>
 
 <section class="historias">
-    <h1>
-        Histórias reais, <br/>
-        de cuidado e confiança.
-    </h1>
+    <div class="wrap-title">
+        <h1>
+            Histórias reais, <br/>
+            de cuidado e confiança.
+        </h1>
+        <img src="../img/home/historias.png" alt="" class="only-mobile">
+    </div>
     <div class="wrap-historias">
-        <img src="../img/home/historias.png" alt="">
+        <img src="../img/home/historias.png" alt="" class="tablet-desktop">
         <div class="right-historias">
-            <img class="balao" src="../img/home/balao.png" alt="">
+            <img class="balao tablet-desktop" src="../img/home/balao.png" alt="">
+            <img class="balao only-mobile" src="../img/home/balao-mob.png" alt="">
             <img 
             src="../img/icons/aspas.png"
             srcset="../img/icons/aspas@2x.png 2x"
             class="aspas"
             alt="">
-            <div class="depoimento">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <h3>Melissa</h3>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="depoimento">
+                            <p>Dra. Larissa é um anjo na forma de médica. Humana, empática, prestativa e com 0 neuroses, o que transmite segurança e confiança para nós, pais. Mesmo nos momentos difíceis, ela não permitiu que entrássemos em pânico, dando aconselhamento cauteloso e cuidadoso. Amamos o atendimento.</p>
+                            <h3>Gabriela Wollertt Tesserolli</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="depoimento">
+                            <p>A Dra. Larissa nos acompanha há mais de dois anos, desde o nascimento do nosso filho, e tem nos proporcionado uma experiência repleta de ciência e acolhimento. Só temos a agradecer por poder contar com seu olhar cuidadoso.</p>
+                            <h3>Thaylise Mussi</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="depoimento big">
+                            <p>A Dra Bárbara nos acompanhou desde a consulta pré natal e estava conosco no dia do nascimento da nossa filha. Foi maravilhosa com as orientações antes do nascimento, no dia do parto nos permitiu ter uma golden hour inesquecível, foi a última a ir embora nos deixando com todas as orientações e segurança com nossa recém nascida. As consultas de puericultura são maravilhosas, sem pressa, ela orienta, entende a dinâmica familiar e nos dá soluções práticas para os desafios do dia a dia. Viajo 100km para manter o acompanhamento da minha bebê com ela, pois ela exerce a pediatria com maestria. Ela é maravilhosa!</p>
+                            <h3>Michelle Moreira</h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="depoimento">
+                            <p>Dra Barbara Gracia atende o Gabriel desde o nascimento, sempre muito atenciosa com ele e com a gente durante as consultas e as infinitas dúvidas de pais de primeira viagem! Foi, sem dúvidas, importante para que conseguíssemos vencer os desafios com a amamentação. Mais do que simplesmente uma pediatra, referência para nós quando pensamos na saúde do nosso pequeno!</p>
+                            <h3>Airyne de Souza Berri</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -220,3 +248,15 @@ cssPath: "/css/home.css"
 
 
 {% include 'footer.njk' %}
+
+<script>
+    var swiper = new Swiper(".swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        breakpoints: {
+            360: {
+                spaceBetween: 50,
+            },
+        },
+    });
+</script>
