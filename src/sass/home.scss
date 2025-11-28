@@ -416,11 +416,25 @@
 .historias{
     width: 90%;
     margin: 0 auto 5rem;
-    h1{
-        font-size: 4.4rem;
-        line-height: 5.4rem;
-        letter-spacing: 2%;
-        color: $marrom;
+    .wrap-title{
+        display: flex;
+        gap: 6rem;
+        h1{
+            font-size: 4.4rem;
+            line-height: 5.4rem;
+            letter-spacing: 2%;
+            color: $marrom;
+        }
+        .buttons{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            .button{
+                width: 6rem;
+                height: 4.5rem;
+                position: unset;
+            }
+        }
     }
     .wrap-historias{
         display: flex;
@@ -476,6 +490,7 @@
                     font-size: 1.8rem;
                 }
             }
+            
         }
     }
     @media screen and (max-width:700px) {
@@ -532,6 +547,18 @@
                     padding-left: 4rem;
                     p{
                         font-size: 1.4rem;
+                    }
+                }
+                .buttons-mobile{
+                    display: flex !important;
+                    gap: 0.5rem;
+                    align-items: center;
+                    margin-top: -5rem;
+                    margin-left: 3rem;
+                    .button{
+                        width: 4rem;
+                        height: auto;
+                        position: unset;
                     }
                 }
             }

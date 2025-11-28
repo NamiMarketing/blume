@@ -182,10 +182,15 @@ cssPath: "/css/home.css"
             de cuidado e confiança.
         </h1>
         <img src="../img/home/historias.png" alt="" class="only-mobile">
+        <div class="buttons">
+            <img src="../img/icons/previous.png" alt="" class="previous tablet-desktop button swiper-button-prev">
+            <img src="../img/icons/next.png" alt="" class="next tablet-desktop button swiper-button-next">
+        </div>
     </div>
     <div class="wrap-historias">
         <img src="../img/home/historias.png" alt="" class="tablet-desktop">
         <div class="right-historias">
+            
             <img class="balao tablet-desktop" src="../img/home/balao.png" alt="">
             <img class="balao only-mobile" src="../img/home/balao-mob.png" alt="">
             <img 
@@ -220,6 +225,10 @@ cssPath: "/css/home.css"
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="buttons-mobile only-mobile">
+                <img src="../img/icons/previous.png" alt="" class="previous only-mobile button swiper-button-prev">
+                <img src="../img/icons/next.png" alt="" class="next only-mobile button swiper-button-next">
             </div>
         </div>
     </div>
@@ -257,6 +266,10 @@ cssPath: "/css/home.css"
             360: {
                 spaceBetween: 50,
             },
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
         },
     });
 </script>
